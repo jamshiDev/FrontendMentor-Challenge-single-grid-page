@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+  padding-bottom: 1.2rem;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+}
+
+span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ccc;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 1.2em;
+}
+
+li {
+  list-style-type: none;
+  color: hsl(204, 43%, 93%);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 40rem;
+  background-color: #fff;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 30px 0px;
+}
+
+.top-container {
+  padding: 2.5rem 2.5rem 2rem;
+}
+
+.top-container p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: hsl(218, 22%, 67%);
+}
+
+.bottom-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.bottom-container p {
+  list-style-type: none;
+  color: hsl(204, 43%, 93%);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 0.4rem;
+  padding-bottom: 2rem;
+}
+
+.first-div {
+  background-color: hsl(179, 62%, 43%);
+  padding: 2.5rem 2.5rem 2rem;
+  border-bottom-left-radius: 10px;
+}
+
+.second-div {
+  background-color: hsl(179, 62%, 43%);
+  padding: 2.5rem 2.5rem 2rem;
+  border-bottom-right-radius: 10px;
+  opacity: 80%;
+}
+
+button {
+	background-color: hsl(71, 73%, 54%);
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+	color: #fff;
+	font-size: 1em;
+	font-weight: 700;
+	padding: 16px 0;
+	
+	width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+
+    body{
+        align-items: flex-start;
+        font-size: 14px;
+    }
+  .container {
+    max-width: 80%;
+  }
+
+  .first-div {
+    border-radius: 0;
+  }
+
+  .second-div {
+    border-bottom-left-radius: 10px;
+  }
+}
